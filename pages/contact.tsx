@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 export default function ContactMe() {
   return (
     <Layout
-        title="POULHES Enzo - Contact me"
+        title="POULHES Enzo - Contactez-moi"
     >
         <Contact />
     </Layout>

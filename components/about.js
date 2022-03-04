@@ -1,5 +1,14 @@
-export default function Contact() {
+export default function About() {
     return (
-        <h1>About</h1>
+        <section className="bg-white dark:bg-dark">
+            {/* Title */}
+            <div className="bg-white dark:bg-dark">
+                <h1>About</h1>
+            </div>
+
+            <div className="">
+
+            </div>
+        </section>
     )
 }

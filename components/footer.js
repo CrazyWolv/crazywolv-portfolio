@@ -1,5 +1,10 @@
 export default function Footer() {
     return (
-        <footer>Footer</footer>
+        <section className="bg-white dark:bg-dark">
+        {/* Title */}
+        <footer className="bg-white dark:bg-dark">
+            Footer
+        </footer>
+    </section>
     )
 }
