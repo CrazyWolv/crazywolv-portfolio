@@ -1,4 +1,4 @@
-const data = {
+const allData = {
     githubUsername: "CrazyWolv",
     fullName:"Enzo POULHES",
     iAm:"Développeur Frontend React",
@@ -76,11 +76,12 @@ const data = {
             desc: "Lycée Général - Littéraire",
         },
     ],
-    ResumeUrl:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
-    SocialLinks: {
+    resumeUrl:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
+    socialLinks: {
     linkedin: "https://linkedin.com/in/poulhes-enzo",
     github: "https://github.com/crazywolv",
+    twitter:"https://twitter.com/CrazyVVolv",
     },
 }
 
-export default data;
+export default allData;

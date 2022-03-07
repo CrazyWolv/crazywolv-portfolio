@@ -14,7 +14,8 @@ module.exports = {
       'light':'#C6C6C6',
       'transparent':'transparent',
       'white':'white',
-      'black':'black'
+      'black':'black',
+      'yellow':'#F59E0B'
     },
     fontFamily:{
       'display': ['Raleway', 'sans-serif'],
