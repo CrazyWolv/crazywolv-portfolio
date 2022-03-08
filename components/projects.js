@@ -19,9 +19,9 @@ export default function Projects() {
                     projectCount++;
 
                     return(
-                        <a href={project.link} key={project.title}>
-                            <Card image={project.imgUrl} title={project.title} number={projectCount} />
-                        </a>
+                        // <a href={project.link} key={project.title}>
+                            <Card image={project.imgUrl} key={project.title} link={project.link} title={project.title} number={projectCount} />
+                        // </a>
                     )
                 })}
                 

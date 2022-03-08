@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  purge: [
+  content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
@@ -18,8 +18,7 @@ module.exports = {
       'yellow':'#F59E0B'
     },
     fontFamily:{
-      'display': ['Raleway', 'sans-serif'],
-      'body':['Raleway', 'sans-serif'],
+      'general': ['Raleway', 'sans-serif'],
     },
     extend: {
       spacing: {
