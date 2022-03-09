@@ -2,8 +2,8 @@ import allData from '@data/data';
 
 export default function Footer() {
     return (
-        <footer><div className="footer bg-light dark:bg-dark">
-            <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+        <footer><div className="footer dark:bg-dark">
+            <div className="max-w-6xl  mx-auto px-4 py-2 md:py-5">
             <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-center md:items-center mt-8">
                 {/* Title */}
                     <div className="text-center flex">

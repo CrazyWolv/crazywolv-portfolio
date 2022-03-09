@@ -1,7 +1,7 @@
 const allData = {
     githubUsername: "CrazyWolv",
     fullName:"Enzo POULHES",
-    iAm:"Développeur Frontend React",
+    iAm:"Dev Frontend React",
     mail:"poulhes.e@gmail.com",
     tel:"+33 781926916",
     town:"Strasbourg, Grand-Est, France",

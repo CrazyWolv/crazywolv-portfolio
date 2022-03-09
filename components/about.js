@@ -11,7 +11,7 @@ export default function About() {
             </div>
 
             <div className="bg-white dark:bg-dark max-w-6xl mx-auto flex-col">
-                <div className="title py-10 pl-10 bg-light">
+                <div className="py-10 pl-10 bg-light">
                     Je code actuellement le projet <a href={allData.about.currentProjectUrl} target="_blank" rel="noreferrer">{allData.about.currentProject}</a>
                 </div>
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40 bg-secondary">

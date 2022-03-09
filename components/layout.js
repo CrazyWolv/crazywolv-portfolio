@@ -24,7 +24,7 @@ export default function Layout({children, ...customMeta}) {
                 <meta property="og:image" content={meta.image} />
             </Head>
 
-            <main className="main w-full h-screen bg-light dark:bg-dark">
+            <main className="main w-full h-screen dark:bg-dark">
                 <Nav />
                     <div>
                         {children}

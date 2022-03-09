@@ -14,23 +14,31 @@ export default function Navigation() {
     }, [])
 
     return (
-        <div className="max-w-6xl mx-auto px-4 py-10 md:py-20 dark:bg-dark">
-            <nav className="flex md:flex-row justify-between items-center">
+        <div className="w-full py-2 border-b-2 border-secondary md:py-5 dark:bg-dark">
+            <nav className="max-w-6xl mx-auto flex md:flex-row justify-between items-center">
                 {/* Navbar */}
-                <div className="flex flex-col">
+                <div className="flex items-center">
                     <Link href="/">
                         <a>
-                        <h1 className="font-semibold text-xl dark:text-gray-100">
+                            {mounted && theme === "dark" ? (
+                                <img src="/logo-darkTheme.svg" alt="Logo" 
+                                className="w-logo h-logo py-0" />
+                            ) : (
+                                <img src="/logo-lightTheme.svg" alt="Logo" className="w-logo h-logo py-0" />
+                            )}
+                        </a>
+                    </Link>
+                <div className="flex-col -ml-5">
+                        <p className="font-semibold text-xl dark:text-gray-100">
                             {allData.fullName}
-                        </h1>
+                        </p>
                         <p className="text-base font-light text-gray-500 dark:text-gray-300">
                             {allData.iAm}
                         </p>
-                        </a>
-                    </Link>
+                    </div>
                 </div>
 
-                <div className="space-x-8 hidden md:block">
+                <div className="space-x-8 hidden text-center md:block">
                     <Link href="/about">   
                     <a>A Propos</a>
                     </Link>
@@ -41,7 +49,7 @@ export default function Navigation() {
                         <a>Contact</a>
                     </Link>
                 </div>
-                <div className="space-x-4 flex flex-row items-center md:hidden">
+                <div className="space-x-4 flex flex-row hidden items-center md:block md:flex">
                 <a
                     href={allData.socialLinks.linkedin}
                     className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -104,7 +112,7 @@ export default function Navigation() {
                 </button>
             </nav>
 
-            <div className="space-x-8 block md:hidden mt-4">
+            <div className="space-x-8 block text-center pb-5 md:hidden mt-4">
                 <Link href="/about">
                 <a className="text-base font-normal text-gray-600 dark:text-gray-300">
                     About

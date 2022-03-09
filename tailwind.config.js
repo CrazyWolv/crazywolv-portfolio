@@ -1,4 +1,22 @@
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
+
+const customClass = plugin(function({addUtilities}){
+  addUtilities({
+    ".preserve-3D":{
+      transformStyle:"preserve-3d",
+    },
+    ".perspective-1000":{
+      perspective:"1000px",
+    },
+    ".backface-hidden":{
+      backfaceVisibility:"hidden",
+    },
+    ".cubic-bezier":{
+      transition: "transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+    }
+  })
+})
 
 module.exports = {
   mode: "jit",
@@ -9,13 +27,12 @@ module.exports = {
   darkMode: "class",
   theme: {
     colors:{
+      colors,
       'dark':'#404040',
       'secondary':'#68A378',
       'light':'#C6C6C6',
       'transparent':'transparent',
-      'white':'white',
-      'black':'black',
-      'yellow':'#F59E0B'
+      'customYellow':'#F59E0B'
     },
     fontFamily:{
       'general': ['Raleway', 'sans-serif'],
@@ -23,6 +40,7 @@ module.exports = {
     extend: {
       spacing: {
         '100px':'100px',
+        'logo':'150px'
       },
       borderRadius:{
         '4xl':'2rem',
@@ -38,5 +56,5 @@ module.exports = {
     extend: {},
     display: ["responsive", "group-hover", "group-focus"],
   },
-  plugins: [],
+  plugins: [customClass],
 }

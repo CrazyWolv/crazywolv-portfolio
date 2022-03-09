@@ -2,13 +2,13 @@ import Card from './Card';
 import allData from '@data/data';
 
 export default function Projects() {
-    const projectCount = 0;
+    let projectCount = 0;
 
     return (
         <section className="bg-white dark:bg-dark">
             {/* Title */}
             <div className="bg-white dark:bg-dark max-w-6xl mx-auto h-48">
-                <h1 className="title text-5xl md:text-9xl font-bold py-20 text-center md:text-left">Projets</h1>
+                <h1 className="title text-8xl font-bold py-20 text-center">Projets</h1>
             </div>
 
             {/* Grid */}
@@ -17,6 +17,9 @@ export default function Projects() {
 
                 {allData.projects.map((project) => {
                     projectCount++;
+                    if(projectCount < 10){
+                        projectCount = `0${projectCount}`
+                    }
 
                     return(
                         // <a href={project.link} key={project.title}>
