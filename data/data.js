@@ -10,16 +10,25 @@ const allData = {
             title: "Stack Overflou",
             link: "https://github.com/CrazyWolv/stackoverflou",
             imgUrl: "/stackoverflou.png",
+            techs:[
+                "HTML5", "CSS3", "NodeJS", "React", "Redux"
+            ]
           },
         {
             title: "Space Tourism",
             link: "https://crazywolv-space-tourism.herokuapp.com/",
-            imgUrl: "/space-tourism.png"
+            imgUrl: "/space-tourism.png",
+            techs:[
+                "HTML5", "CSS3", "SaSS", "React"
+            ]
           },
           {
             title: "NFT-Card",
             link: "https://crazywolv.github.io/nft-card/",
-            imgUrl: "/nft-card.png"
+            imgUrl: "/nft-card.png",
+            techs:[
+                "HTML5", "CSS3"
+            ]
           },
     ],
     about:{

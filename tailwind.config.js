@@ -3,6 +3,9 @@ const plugin = require("tailwindcss/plugin");
 
 const customClass = plugin(function({addUtilities}){
   addUtilities({
+    ".rotate-y-180":{
+      transform:"rotateY(180deg)",
+    },
     ".preserve-3D":{
       transformStyle:"preserve-3d",
     },

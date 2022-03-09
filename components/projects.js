@@ -22,9 +22,7 @@ export default function Projects() {
                     }
 
                     return(
-                        // <a href={project.link} key={project.title}>
-                            <Card image={project.imgUrl} key={project.title} link={project.link} title={project.title} number={projectCount} />
-                        // </a>
+                            <Card {...project} key={projectCount} number={projectCount} />
                     )
                 })}
                 
