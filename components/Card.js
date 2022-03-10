@@ -1,28 +1,36 @@
-export default function Card({imgUrl, title, link, techs, number}) {
+import {useState} from "react";
 
-    // Function to flip a project card
-    function toggleFlip(evt){
-        evt.classList.toggle('flip-card');
-    }
+export default function Card({imgUrl, title, link, techs, number}) {
+    const [isFlipped, setIsFlipped] = useState(false);
 
     return (
         <>
             {/* 1 Card */}
             
-            <div className="bg-transparent relative cursor-pointer rounded-md group perspective-1000">
-                    <div className="card preserve-3D relative overflow-hidden rounded-md w-full h-full duration-1000" onClick={(evt) => {toggleFlip(evt.currentTarget)}}>
+            <div className="bg-transparent relative rounded-lg group w-[375px] h-[250px] md:w-[560px] md:h-[330px] cursor-pointer perspective-1000">
+                    <div className={`card preserve-3D relative overflow-hidden rounded-md w-full h-full duration-1000 ${isFlipped ? "flip-card" : ""}`}>
+
+                           {/* Front of the Card */}
+                    <div className="front rounded-md bg-dark" onClick={() => (setIsFlipped(!isFlipped))}>
+                            <div className="absolute w-full flex justify-center text-center">
+                                    <p className="w-1/2 uppercase mt-5 font-bold text-xl md:text-2xl rounded-md px-5 py-1 bg-secondary z-10">{title}</p>
+                                </div>
+                            <p className="absolute bottom-5 left-5 md:bottom-10 md:left-10 font-bold text-xl bg-secondary rounded-full w-[40px] h-[40px] flex items-center justify-center z-10">{number}</p>
+                            <img src={imgUrl} alt={`Image de présentation pour ${title}`} className="absolute w-full h-full rounded-md" />
+                        </div>
+                        
                         
                         {/* Back of the Card */}
-                    <div className="back absolute w-full h-full backface-hidden bg-secondary flex flex-col justify-start">
+                    <div className="back rounded-md bg-light flex flex-col justify-start" onClick={() => (setIsFlipped(!isFlipped))}>
                             {/* Title Div */}
                         <div className="absolute w-full flex justify-center text-center">
-                                    <p className="w-1/2 uppercase mt-10 font-bold text-2xl rounded-md px-5 py-1">
+                                    <p className="w-full uppercase md:mt-5 font-bold text-xl md:text-2xl rounded-md px-5 py-1">
                                         {title}
                                     </p>
                                 </div>
 
                                 {/* Project Description */}
-                                <div className="w-full pl-10">
+                                <div className="absolute w-full pl-10 pt-10 md:pt-20">
                                     blah blah blah
                                 </div>
 
@@ -40,20 +48,13 @@ export default function Card({imgUrl, title, link, techs, number}) {
 
                                 {/* "Go GitHub" button */}
                                 <div className="flex items-center justify-center w-full">
-                                    <button className="absolute py-3 px-5 bottom-5 rounded-md bg-light">
+                                    <button href={link} target="_blank" rel="noreferrer" className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-secondary font-bold">
                                         Check le GitHub
                                     </button>
                                 </div>
                         </div>
 
-                        {/* Front of the Card */}
-                    <div className="front w-full h-full rounded-md backface-hidden z-10">
-                            <div className="absolute w-full flex justify-center text-center">
-                                    <p className="w-1/2 uppercase mt-10 font-bold text-2xl rounded-md px-5 py-1 bg-secondary">{title}</p>
-                                </div>
-                            <p className="bottom-5 left-5 md:bottom-10 md:left-10 font-bold text-xl bg-secondary rounded-full w-[40px] h-[40px] flex items-center justify-center absolute">{number}</p>
-                            <img src={imgUrl} alt={`Image de présentation pour ${title}`} className="w-full h-full rounded-md" />
-                        </div>
+                     
                     </div>
                 </div>
         </>
