@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html{
+    width:100%;
+}
+
 .card{
-    transform: rotateY(0deg) translateY(0) perspective(1000px);
-    -webkit-transform: rotateY(0deg) translateY(0) perspective(1000px);
-    -moz-transform: rotateY(0deg) translateY(0) perspective(1000px);
-    -ms-transform: rotateY(0deg) translateY(0) perspective(1000px);
-    -o-transform: rotateY(0deg) translateY(0) perspective(1000px);
+    transform: translateY(0) perspective(1000px);
+    -webkit-transform: translateY(0) perspective(1000px);
+    -moz-transform: translateY(0) perspective(1000px);
+    -ms-transform: translateY(0) perspective(1000px);
+    -o-transform: translateY(0) perspective(1000px);
+    transform-style:preserve-3d;
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -moz-transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -31,15 +36,8 @@
     width:100%; height:100%;
 }
 
-.card .front{
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-}
-
 .card .back{
+    background-color:red;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);

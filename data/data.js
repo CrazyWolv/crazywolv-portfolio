@@ -11,8 +11,18 @@ const allData = {
             link: "https://github.com/CrazyWolv/stackoverflou",
             imgUrl: "/stackoverflou.png",
             techs:[
-                "HTML5", "CSS3", "NodeJS", "React", "Redux"
-            ]
+                "HTML5", "CSS3", "NodeJS", "React", "Redux", "MongoDB"
+            ],
+            desc:"Un rempompage absolument HONTEUX de Stack Overflow pour me (re)faire la main sur Node.JS et découvrir MongoDB. CRUD user, topics et messages.",
+          },
+          {
+            title: "Forest Project",
+            link: "WIP",
+            imgUrl: "/forest-project.png",
+            techs:[
+                "HTML5", "CSS3", "SaSS", "React", "Redux"
+            ],
+            desc:"Projet personnel d'un voyage dans une forêt à la manière d'un 'Choose your Path' et différentes fins possibles. Work in Progress.",
           },
         {
             title: "Space Tourism",
@@ -20,7 +30,8 @@ const allData = {
             imgUrl: "/space-tourism.png",
             techs:[
                 "HTML5", "CSS3", "SaSS", "React"
-            ]
+            ],
+            desc:"Projet Frontend Mentor #2 - un site basé sur l'espace qui m'a envoyé sur la Lune et sur Mars ! Utilisation de React et de ses hooks pour gérer le changement d'affichage à l'interaction utilisateur.",
           },
           {
             title: "NFT-Card",
@@ -28,7 +39,8 @@ const allData = {
             imgUrl: "/nft-card.png",
             techs:[
                 "HTML5", "CSS3"
-            ]
+            ],
+            desc:"Projet Frontend Mentor #1 - une simple reproduction d'une carte NFT pour revoir les basiques du HTML & CSS",
           },
     ],
     about:{

@@ -15,8 +15,9 @@ export default function Navigation() {
 
     return (
         <div className="w-full py-2 border-b-2 border-secondary md:py-5 dark:bg-dark">
+
+            {/* Navbar */}
             <nav className="max-w-6xl mx-auto flex md:flex-row justify-between items-center">
-                {/* Navbar */}
                 <div className="flex items-center">
                     <Link href="/">
                         <a>
@@ -38,9 +39,12 @@ export default function Navigation() {
                     </div>
                 </div>
 
-                <div className="space-x-8 hidden text-center md:block">
+                <div className="space-x-8 hidden text-center md:flex">
+                    <Link href="/">   
+                        <a>Home</a>
+                    </Link>
                     <Link href="/about">   
-                    <a>A Propos</a>
+                        <a>A Propos</a>
                     </Link>
                     <Link href="/projects">
                         <a>Projets</a>
@@ -69,7 +73,7 @@ export default function Navigation() {
                     className="text-base font-normal text-gray-600 dark:text-gray-300"
                 ><svg xmlns="http://www.w3.org/2000/svg" 
                 fill="currentColor"
-                className="bi bi-linkedin h-5 w-5" 
+                className="bi bi-twitter h-5 w-5" 
                 viewBox="0 0 512 512" 
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -113,6 +117,11 @@ export default function Navigation() {
             </nav>
 
             <div className="space-x-8 block text-center pb-5 md:hidden mt-4">
+                <Link href="/">
+                <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+                    Home
+                </a>
+                </Link>
                 <Link href="/about">
                 <a className="text-base font-normal text-gray-600 dark:text-gray-300">
                     About

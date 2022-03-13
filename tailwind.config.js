@@ -43,7 +43,10 @@ module.exports = {
     extend: {
       spacing: {
         '100px':'100px',
-        'logo':'150px'
+        'logo':'150px',
+        '11':'2.75rem',
+        '12':'2.85rem',
+        '15':'3.15rem'
       },
       borderRadius:{
         '4xl':'2rem',
