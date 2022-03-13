@@ -6,13 +6,17 @@ body, html{
     width:100%;
 }
 
+.card-container{
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+}
+
 .card{
-    transform: translateY(0) perspective(1000px);
-    -webkit-transform: translateY(0) perspective(1000px);
-    -moz-transform: translateY(0) perspective(1000px);
-    -ms-transform: translateY(0) perspective(1000px);
-    -o-transform: translateY(0) perspective(1000px);
-    transform-style:preserve-3d;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -moz-transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -30,14 +34,15 @@ body, html{
 
 .card .front, 
 .card .back{
+    display:block;
     position:absolute;
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     width:100%; height:100%;
 }
 
 .card .back{
-    background-color:red;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);

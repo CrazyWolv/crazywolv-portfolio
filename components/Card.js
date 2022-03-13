@@ -6,21 +6,21 @@ export default function Card({imgUrl, title, link, techs, number}) {
     return (
         <>
             {/* 1 Card */}
-            <div className="bg-transparent rounded-lg w-[375px] h-[250px] md:w-[560px] md:h-[330px] cursor-pointer mx-auto"> {/* <-- Flipbox */}
-                    <div className={`card preserve-3D relative overflow-hidden rounded-md w-full h-full duration-1000 ${isFlipped ? "flip-card" : ""}`}> {/* <-- Flipbox-inner */}
+            <div className="card-container bg-transparent rounded-lg w-[375px] h-[250px] md:w-[560px] md:h-[330px] cursor-pointer mx-auto perspective-1000"> {/* <-- Flipbox */}
+                    <div className={`card relative overflow-hidden rounded-md w-full h-full duration-1000 ${isFlipped ? "flip-card" : ""}`}> {/* <-- Flipbox-inner */}
 
                            {/* Front of the Card */}
-                    <div className="front rounded-md bg-dark" onClick={() => (setIsFlipped(!isFlipped))}> {/* <-- Flipbox-inner #Front */}
+                    <div className={`front rounded-md bg-dark  ${isFlipped ? "rotate-y-default z-0" : "rotate-y-default z-2" }`} onClick={() => (setIsFlipped(!isFlipped))}> {/* <-- Flipbox-inner #Front */}
                             <div className="absolute w-full flex justify-center text-center">
                                     <p className="w-1/2 uppercase mt-5 font-bold text-xl rounded-md px-5 py-1 bg-secondary z-10">{title}</p>
                                 </div>
                             <p className="absolute bottom-5 left-5 md:bottom-10 md:left-10 font-bold text-xl bg-secondary rounded-full w-[40px] h-[40px] flex items-center justify-center z-10">{number}</p>
-                            <img src={imgUrl} alt={`Image de présentation pour ${title}`} className="w-full h-full rounded-md" />
+                            <img src={imgUrl} alt={`Image de présentation pour ${title}`} className="w-full h-full block rounded-md" />
                         </div>
                         
                         
                         {/* Back of the Card */}
-                    <div className="back rounded-md flex flex-col justify-start" onClick={() => (setIsFlipped(!isFlipped))}> {/* <-- Flipbox-inner #Back */}
+                    <div className={`back preserve-3D rounded-md flex flex-col justify-start ${isFlipped ? "rotate-y-180 z-10" : "rotate-y-180 z-0" }`} onClick={() => (setIsFlipped(!isFlipped))}> {/* <-- Flipbox-inner #Back */}
                             {/* Title Div */}
                         <div className="absolute w-full flex justify-center text-center">
                                     <p className="w-full uppercase md:mt-5 font-bold text-xl rounded-md px-5 py-1">
