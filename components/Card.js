@@ -54,7 +54,7 @@ export default function Card({imgUrl, title, link, techs, number}) {
 
                                 {/* "Go GitHub or Live Site" button */}
                                 <div className="flex items-center justify-center w-full">
-                                    {link === "WIP" ? <a href="#" className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-orange font-bold">
+                                    {link === "WIP" ? <a href="#" className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-dark font-bold">
                                         Work in Progress
                                     </a> : <a href={link} target="_blank" className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-secondary font-bold">
                                         Découvrez-moi !

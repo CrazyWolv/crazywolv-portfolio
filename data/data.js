@@ -44,11 +44,53 @@ const allData = {
           },
     ],
     about:{
-        title:"Un Développeur Frontend un peu Crazy",
+        title:"un Développeur Frontend un peu Crazy",
         description:[
             `J'ai commencé à coder en HTML & CSS sur des templates de forums RPG lorsque j'avais entre 12 et 14 ans. J'ignorais encore à quel point le monde du dev' était vaste et passionnant.`,
             `Lors de mes deux formations en Dev, j'ai appris l'existence de Bootstrap et Semantic-UI et j'ai entendu "Hello Darkness my Old Friend" en repensant à tout ce temps perdu sur le peu d'applications que j'avais à mon actif à ce moment-là.`,
             `Aujourd'hui, je suis un Dev qui aime Frontdev en React, NextJS, HTML5, JavaScript, CSS3, avec TailwindCSS ou Semantic-UI à l'aide de Yarn ou npm.`,
+        ],
+        hardSkills:[
+            {
+                name:"HTML5",
+                icon:"/icons/html-1.svg",
+            },
+            {
+                name:"CSS3",
+                icon:"/icons/css-3.svg",
+            },
+            {
+                name:"JavaScript",
+                icon:"/icons/logo-javascript.svg",
+            },
+            {
+                name:"SaSS",
+                icon:"/icons/sass-1.svg",
+            },
+            {
+                name:"ReactJS",
+                icon:"/icons/react-2.svg",
+            },
+            {
+                name:"Redux",
+                icon:"/icons/redux.svg",
+            },
+            {
+                name:"TailwindCSS",
+                icon:"/icons/tailwindcss.svg",
+            },
+            {
+                name:"PostgreSQL",
+                icon:"/icons/postgresql.svg",
+            },
+            {
+                name:"Git",
+                icon:"/icons/git.svg",
+            },
+            {
+                name:"Figma",
+                icon:"/icons/figma-1.svg",
+            },
         ],
         currentProject: "Stack Overflou",
         currentProjectUrl: "https://github.com/CrazyWolv/stackoverflou",
@@ -97,7 +139,11 @@ const allData = {
             desc: "Lycée Général - Littéraire",
         },
     ],
-    resumeUrl:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
+    resumeUrl:{
+        webDev:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
+        alt:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
+        planning:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
+    },
     socialLinks: {
     linkedin: "https://linkedin.com/in/poulhes-enzo",
     github: "https://github.com/crazywolv",
