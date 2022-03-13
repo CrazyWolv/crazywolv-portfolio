@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+// const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 
 const customClass = plugin(function({addUtilities}){
@@ -7,7 +7,7 @@ const customClass = plugin(function({addUtilities}){
       transform:"rotateY(0deg)",
     },
     ".rotate-y-180":{
-      transform:"rotateY(180deg)",
+      transform:"rotateY( 180deg )",
     },
     ".rotate-y-360":{
       transform:"rotateY(360deg)",
@@ -36,7 +36,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     colors:{
-      colors,
+      // colors,
       'dark':'#404040',
       'secondary':'#68A378',
       'light':'#C6C6C6',
@@ -66,7 +66,7 @@ module.exports = {
   },
   variants: {
     extend: {},
-    display: ["responsive", "group-hover", "group-focus"],
+    display: ["responsive", "hover", "group-hover", "group-focus"],
   },
   plugins: [customClass],
 }

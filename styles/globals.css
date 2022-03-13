@@ -12,11 +12,6 @@ body, html{
 }
 
 .card{
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -moz-transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -43,9 +38,5 @@ body, html{
 }
 
 .card .back{
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+    transform: scaleX(-1);
 }

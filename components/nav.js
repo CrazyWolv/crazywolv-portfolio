@@ -94,7 +94,7 @@ export default function Navigation() {
                         viewBox="0 0 24 24"
                         fill="currentColor"
                         stroke="currentColor"
-                        className="w-4 h-4 text-yellow dark:text-yellow"
+                        className="w-4 h-4 text-customYellow dark:text-customYellow"
                     >
                         {theme === "dark" ? (
                         <path
