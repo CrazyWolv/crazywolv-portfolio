@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto flex md:flex-row justify-around items-center">
             <div className="space-x-8 text-center md:flex">
                 {/* Title */}
-                <p className="flex gap-3 items-center"><svg xmlns="http://www.w3.org/2000/svg" 
+                <p className="flex gap-3 items-center text-lightThemeText dark:text-darkThemeText"><svg xmlns="http://www.w3.org/2000/svg" 
                 fill="currentColor"
                 className="h-5 w-5" 
                 viewBox="0 0 512 512" 
@@ -16,12 +16,26 @@ export default function Footer() {
                 {/* <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --> */}
                 <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM199.2 312.6c14.94 15.06 34.8 23.38 55.89 23.38c.0313 0 0 0 0 0c21.06 0 40.92-8.312 55.83-23.38c9.375-9.375 24.53-9.469 33.97-.1562c9.406 9.344 9.469 24.53 .1562 33.97c-24 24.22-55.95 37.56-89.95 37.56c0 0 .0313 0 0 0c-33.97 0-65.95-13.34-89.95-37.56c-49.44-49.88-49.44-131 0-180.9c24-24.22 55.98-37.56 89.95-37.56c.0313 0 0 0 0 0c34 0 65.95 13.34 89.95 37.56c9.312 9.438 9.25 24.62-.1562 33.97c-9.438 9.344-24.59 9.188-33.97-.1562c-14.91-15.06-34.77-23.38-55.83-23.38c0 0 .0313 0 0 0c-21.09 0-40.95 8.312-55.89 23.38C168.3 230.6 168.3 281.4 199.2 312.6z"/></svg> Tous droits réservés </p></div>
 
-                <div className="flex flex-col"><p>{allData.fullName} - 2022</p></div>
+                <div className="flex flex-col text-lightThemeText dark:text-darkThemeText"><p>{allData.fullName} - 2022</p></div>
                 </div>
                 <div className="flex justify-evenly md:justify-center md:gap-[4rem] items-center justify-center mt-10">
                     <a
+                    href={`mailto:${allData.mail}`}
+                    className="text-base font-normal text-lightThemeText dark:text-darkThemeText"
+                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    fill="currentColor"
+                    className="bi bi-github h-7 w-7 md:h-9 md:w-9" 
+                    viewBox="0 0 512 512" 
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}>
+                        {/* Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. */}
+                        <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                    </a>
+                    <a
                     href={allData.socialLinks.github}
-                    className="text-base font-normal text-gray-600 dark:text-gray-300"
+                    className="text-base font-normal text-lightThemeText dark:text-darkThemeText"
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     fill="currentColor"
@@ -35,7 +49,7 @@ export default function Footer() {
                     </a>
                     <a
                     href={allData.socialLinks.linkedin}
-                    className="text-base font-normal text-gray-600 dark:text-gray-300"
+                    className="text-base font-normal text-lightThemeText dark:text-darkThemeText"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     fill="currentColor"
@@ -49,7 +63,7 @@ export default function Footer() {
                     </a>
                 <a
                     href={allData.socialLinks.twitter}
-                    className="text-base font-normal text-gray-600 dark:text-gray-300"
+                    className="text-base font-normal text-lightThemeText dark:text-darkThemeText"
                 ><svg xmlns="http://www.w3.org/2000/svg" 
                 fill="currentColor"
                 className="bi bi-twitter h-7 w-7 md:h-9 md:w-9" 

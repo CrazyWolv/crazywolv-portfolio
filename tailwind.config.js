@@ -23,7 +23,12 @@ const customClass = plugin(function({addUtilities}){
     },
     ".cubic-bezier":{
       transition: "transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
-    }
+    },
+    ".active":{
+      fontWeight:"bold",
+      color:"#68A378",
+      textTransform:"uppercase",
+    },
   })
 })
 
@@ -41,7 +46,9 @@ module.exports = {
       'secondary':'#68A378',
       'light':'#C6C6C6',
       'transparent':'transparent',
-      'customYellow':'#F59E0B'
+      'customYellow':'#F59E0B',
+      'darkThemeText':'#95A2B2',
+      'lightThemeText':'#1E2836',
     },
     fontFamily:{
       'general': ['Raleway', 'sans-serif'],

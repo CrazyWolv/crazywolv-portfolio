@@ -8,37 +8,92 @@ const allData = {
     projects:[
         {
             title: "Stack Overflou",
-            link: "https://github.com/CrazyWolv/stackoverflou",
+            link: "WIP",
+            gitHub:"https://github.com/CrazyWolv/stackoverflou",
             imgUrl: "/stackoverflou.png",
             techs:[
-                "HTML5", "CSS3", "NodeJS", "React", "Redux", "MongoDB"
+                {
+                    title:"HTML5",
+                    icon:'/icons/html-1.svg'
+                },{
+                    title:"CSS3",
+                    icon:'/icons/css-3.svg'
+                },{
+                    title:"NodeJS",
+                    icon:'https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg'
+                },{
+                    title:"React",
+                    icon:'/icons/react-2.svg'
+                },{
+                    title:"Redux",
+                    icon:'/icons/redux.svg'
+                },{
+                    title:"MongoDB",
+                    icon:'https://www.svgrepo.com/show/331488/mongodb.svg'
+                },
             ],
             desc:"Un rempompage absolument HONTEUX de Stack Overflow pour me (re)faire la main sur Node.JS et découvrir MongoDB. CRUD user, topics et messages.",
           },
           {
             title: "Forest Project",
             link: "WIP",
+            gitHub:"https://github.com/CrazyWolv/stackoverflou",
             imgUrl: "/forest-project.png",
             techs:[
-                "HTML5", "CSS3", "SaSS", "React", "Redux"
+                {
+                    title:"HTML5",
+                    icon:'/icons/html-1.svg'
+                },{
+                    title:"CSS3",
+                    icon:'/icons/css-3.svg'
+                },{
+                    title:"SaSS",
+                    icon:'/icons/sass-1.svg'
+                },{
+                    title:"React",
+                    icon:'/icons/react-2.svg'
+                },{
+                    title:"Redux",
+                    icon:'/icons/redux.svg'
+                }
             ],
             desc:"Projet personnel d'un voyage dans une forêt à la manière d'un 'Choose your Path' et différentes fins possibles. Work in Progress.",
           },
         {
             title: "Space Tourism",
             link: "https://crazywolv-space-tourism.herokuapp.com/",
+            gitHub: "https://github.com/CrazyWolv/space-tourism",
             imgUrl: "/space-tourism.png",
             techs:[
-                "HTML5", "CSS3", "SaSS", "React"
+                {
+                    title:"HTML5",
+                    icon:'/icons/html-1.svg'
+                },{
+                    title:"CSS3",
+                    icon:'/icons/css-3.svg'
+                },{
+                    title:"SaSS",
+                    icon:'/icons/sass-1.svg'
+                },{
+                    title:"React",
+                    icon:'/icons/react-2.svg'
+                }
             ],
             desc:"Projet Frontend Mentor #2 - un site basé sur l'espace qui m'a envoyé sur la Lune et sur Mars ! Utilisation de React et de ses hooks pour gérer le changement d'affichage à l'interaction utilisateur.",
           },
           {
             title: "NFT-Card",
             link: "https://crazywolv.github.io/nft-card/",
+            gitHub: "https://github.com/CrazyWolv/nft-card",
             imgUrl: "/nft-card.png",
             techs:[
-                "HTML5", "CSS3"
+                {
+                    title:"HTML5",
+                    icon:'/icons/html-1.svg'
+                },{
+                    title:"CSS3",
+                    icon:'/icons/css-3.svg'
+                }
             ],
             desc:"Projet Frontend Mentor #1 - une simple reproduction d'une carte NFT pour revoir les basiques du HTML & CSS",
           },
@@ -47,7 +102,7 @@ const allData = {
         title:"un Développeur Frontend un peu Crazy",
         description:[
             `J'ai commencé à coder en HTML & CSS sur des templates de forums RPG lorsque j'avais entre 12 et 14 ans. J'ignorais encore à quel point le monde du dev' était vaste et passionnant.`,
-            `Lors de mes deux formations en Dev, j'ai appris l'existence de Bootstrap et Semantic-UI et j'ai entendu "Hello Darkness my Old Friend" en repensant à tout ce temps perdu sur le peu d'applications que j'avais à mon actif à ce moment-là.`,
+            `Lors de mes deux formations en Dev, j'ai appris l'existence de Bootstrap et Semantic-UI et j'ai entendu "Hello Darkness my Old Friend" en repensant à tout ce temps perdu sur le très peu de projets que j'avais à mon actif à ce moment-là.`,
             `Aujourd'hui, je suis un Dev qui aime Frontdev en React, NextJS, HTML5, JavaScript, CSS3, avec TailwindCSS ou Semantic-UI à l'aide de Yarn ou npm.`,
         ],
         hardSkills:[
@@ -97,7 +152,14 @@ const allData = {
     },
     exp:[
         {
-            title: "Dev' Frontend & Gitmaster",
+            title: "En recherche d'alternance",
+            company: "O'Clock",
+            year: "2022-2023",
+            companyLink: "https://oclock.io/",
+            desc: "Je suis en recherche d'une alternance...",
+        },
+        {
+            title: "Dev' Frontend",
             company: "O'Clock",
             year: "2021",
             companyLink: "https://oclock.io/",
@@ -108,7 +170,7 @@ const allData = {
             company: "O'Clock",
             year: "2020-2021",
             companyLink: "https://oclock.io/",
-            desc: "Apprentissage du code lors d'une formation intensive de +700h : HTML, CSS, JS, React, Node... tout y est passé",
+            desc: "Apprentissage du code lors d'une formation intensive de +700h, labellisée \"Grande Ecole du Numérique\" - HTML, CSS, JS, React, Node... tout y est passé",
         },
         {
             title: "Stage de fin de Formation",
@@ -118,7 +180,7 @@ const allData = {
             desc: "J'ai développé un site web vitrine à l'aide de WordPress & Elementor",
         },
         {
-            title: "Very Young Developer",
+            title: "Très jeune Padawan du Dev",
             company: "Alaji SAS",
             year: "2020",
             companyLink: "https://www.alaji.fr/",
@@ -132,8 +194,8 @@ const allData = {
             desc: "Ecole de BD - j'y ai appris les bases du dessin",
         },
         {
-            title: "Highschool",
-            company: "Lycée Paul Langevin",
+            title: "Lycée",
+            company: "Lycée Alphonse Daudet",
             year: "2009-2012",
             companyLink: "",
             desc: "Lycée Général - Littéraire",

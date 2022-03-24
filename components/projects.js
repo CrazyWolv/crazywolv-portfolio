@@ -8,7 +8,7 @@ export default function Projects() {
         <section className="bg-white dark:bg-dark">
             {/* Title */}
             <div className="bg-white dark:bg-dark max-w-6xl mx-auto h-48">
-                <h1 className="text-7xl md:text-9xl font-bold py-20 text-center">Projets</h1>
+                <h1 className="text-7xl md:text-9xl font-bold py-20 text-center md:text-center text-lightThemeText dark:text-darkThemeText">Projets</h1>
             </div>
 
             {/* Grid */}
