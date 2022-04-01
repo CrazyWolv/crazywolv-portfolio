@@ -22,8 +22,7 @@ export default function Exp() {
                                     <a href={xp.companyLink} className="italic text-secondary">{xp.company}</a>} {xp.year}
                                 </div>
                             </div>
-                            <p className="text-center"></p>
-                            <p className="text-left">{xp.desc}</p>
+                            <p className="text-left px-10">{xp.desc}</p>
                         </div>
                         )
                     })}

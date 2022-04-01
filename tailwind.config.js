@@ -29,6 +29,59 @@ const customClass = plugin(function({addUtilities}){
       color:"#68A378",
       textTransform:"uppercase",
     },
+    ".accentOn":{
+      background:"red",
+      borderRadius:"10px",
+      color:"white",
+      padding:"2px 5px",
+      marginTop:"1rem",
+    },
+    ".accentOnHover":{
+      transform:"scale(1.1) rotate(180deg)",
+      transition:"transform 0.5s",
+    },
+
+
+    ".underlined-red":{
+      background:"linear-gradient(to right, transparent 0, #f44a3a 100%)",
+      backgroundSize:"0 100%",
+      backgroundRepeat:"no-repeat",
+      backgroundPosition:"0 1.2em",
+      marginLeft:"0",
+      transition:"background margin 0.5s",
+    },
+    ".underlined-yellow":{
+      background:"linear-gradient(to right, transparent 0, #F59E0B 100%)",
+      backgroundSize:"0 100%",
+      backgroundRepeat:"no-repeat",
+      backgroundPosition:"0 1.2em",
+      marginLeft:"0",
+      transition:"background margin 0.5s",
+    },
+    ".underlined-green":{
+      background:"linear-gradient(to right, transparent 0, #68A378 100%)",
+      backgroundSize:"0 100%",
+      backgroundRepeat:"no-repeat",
+      backgroundPosition:"0 1.2em",
+      marginLeft:"0",
+      transition:"background margin 0.5s",
+    },
+    ".underlined-blue":{
+      background:"linear-gradient(to right, transparent 0, #4fb4f2 100%)",
+      backgroundSize:"0 100%",
+      backgroundRepeat:"no-repeat",
+      backgroundPosition:"0 1.2em",
+      marginLeft:"0",
+      transition:"background margin 0.5s",
+    },
+    ".underlined-hover":{
+      backgroundSize:"100% 100%",
+      marginLeft:"2.5rem",
+      transition:"margin 0.5s",
+    },
+    ".underlined-bold":{
+      backgroundPosition:"0 -0.3em"
+    },
   })
 })
 
@@ -49,9 +102,15 @@ module.exports = {
       'customYellow':'#F59E0B',
       'darkThemeText':'#95A2B2',
       'lightThemeText':'#1E2836',
+      'grey':'#8B949E',
+      'black':'#000',
     },
     fontFamily:{
       'general': ['Raleway', 'sans-serif'],
+    },
+    screens: {
+      'smMobile':'360px',
+      'tablet': '640px',
     },
     extend: {
       spacing: {

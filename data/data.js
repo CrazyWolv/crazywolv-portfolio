@@ -7,6 +7,31 @@ const allData = {
     town:"Strasbourg, Grand-Est, France",
     projects:[
         {
+            title: "Application BeSwarm",
+            link: "WIP",
+            gitHub:"",
+            imgUrl: "/appBeSwarm.png",
+            techs:[
+                {
+                    title:"HTML5",
+                    icon:'/icons/html-1.svg'
+                },{
+                    title:"CSS3",
+                    icon:'/icons/css-3.svg'
+                },{
+                    title:"Axios",
+                    icon:'/icons/axios.png'
+                },{
+                    title:"React",
+                    icon:'/icons/react-2.svg'
+                },{
+                    title:"Redux",
+                    icon:'/icons/redux.svg'
+                },
+            ],
+            desc:"Une application permettant à un utilisateur de créer des menus suivant son besoin en équilibrage alimentaire.",
+          },
+        {
             title: "Stack Overflou",
             link: "WIP",
             gitHub:"https://github.com/CrazyWolv/stackoverflou",
@@ -37,7 +62,7 @@ const allData = {
           {
             title: "Forest Project",
             link: "WIP",
-            gitHub:"https://github.com/CrazyWolv/stackoverflou",
+            gitHub:"https://github.com/CrazyWolv/Forest-Project",
             imgUrl: "/forest-project.png",
             techs:[
                 {

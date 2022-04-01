@@ -98,7 +98,7 @@ export default function Navigation() {
                 <button
                     aria-label="Toggle Dark Mode"
                     type="button"
-                    className="w-10 h-10 p-3 rounded focus:outline-none"
+                    className="w-10 h-10 p-3 mr-5 md:mr-0 rounded focus:outline-none"
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
                                         {mounted && (
@@ -107,7 +107,7 @@ export default function Navigation() {
                         viewBox="0 0 24 24"
                         fill="currentColor"
                         stroke="currentColor"
-                        className="w-4 h-4 text-customYellow dark:text-customYellow"
+                        className="w-5 h-5 text-customYellow dark:text-customYellow"
                     >
                         {theme === "dark" ? (
                         <path

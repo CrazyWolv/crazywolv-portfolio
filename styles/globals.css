@@ -8,14 +8,9 @@ body, html{
 
 
 
+
+
 /****** ACTIVE LINKS ******/
-/* a:hover{ <-- put a custom class in TailwindCSS & config on hover
-    transform: scale(1.2) rotate("25deg");
-    -webkit-transform: scale(1.2) rotate("25deg");
-    -moz-transform: scale(1.2) rotate("25deg");
-    -ms-transform: scale(1.2) rotate("25deg");
-    -o-transform: scale(1.2) rotate("25deg");
-} */
 a.active::after{
     content:' ↴ ';
 }
