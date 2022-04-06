@@ -23,10 +23,10 @@ export default function Navigation() {
                     <Link href="/">
                         <a>
                             {mounted && theme === "dark" ? (
-                                <img src="/logo-darkTheme.svg" alt="Logo" 
+                                <img src="img/logo-darkTheme.svg" alt="Logo" 
                                 className="w-logo h-logo py-0" />
                             ) : (
-                                <img src="/logo-lightTheme.svg" alt="Logo" className="w-logo h-logo py-0" />
+                                <img src="img/logo-lightTheme.svg" alt="Logo" className="w-logo h-logo py-0" />
                             )}
                         </a>
                     </Link>
@@ -40,7 +40,7 @@ export default function Navigation() {
                     </div>
                 </div>
 
-                <div className="space-x-8 hidden text-center items-center tablet:hidden md:flex md:space-x-8 lg:flex">
+                <div className="space-x-8 hidden text-center items-center tablet:hidden md:flex md:space-x-5 lg:flex lg:space-x-8">
                     <Link href="/">   
                         <a className={router.pathname === "/" ? "text-lightThemeText dark:text-darkThemeText active dark:active" : "text-lightThemeText dark:text-darkThemeText"}>Home</a>
                     </Link>

@@ -14,7 +14,7 @@ export default function Exp() {
                     {allData.exp.map((xp) => {
                         
                         return(
-                        <div key={xp.title} className="my-5 md:w-1/2">
+                        <div key={xp.title} className="my-5 md:w-full lg:w-50">
                             <div className="flex flex-col items-center py-2 md:py-3">
                                 <p className="text-2xl font-bold md:text-4xl xpTitle">{xp.title}</p>
                                 <div className="flex flex-row items-center gap-x-10 my-2">

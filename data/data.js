@@ -10,7 +10,7 @@ const allData = {
             title: "Application BeSwarm",
             link: "WIP",
             gitHub:"",
-            imgUrl: "/appBeSwarm.png",
+            imgUrl: "/img/appBeSwarm.png",
             techs:[
                 {
                     title:"HTML5",
@@ -35,7 +35,7 @@ const allData = {
             title: "Stack Overflou",
             link: "WIP",
             gitHub:"https://github.com/CrazyWolv/stackoverflou",
-            imgUrl: "/stackoverflou.png",
+            imgUrl: "/img/stackoverflou.png",
             techs:[
                 {
                     title:"HTML5",
@@ -63,7 +63,7 @@ const allData = {
             title: "Forest Project",
             link: "WIP",
             gitHub:"https://github.com/CrazyWolv/Forest-Project",
-            imgUrl: "/forest-project.png",
+            imgUrl: "/img/forest-project.png",
             techs:[
                 {
                     title:"HTML5",
@@ -88,7 +88,7 @@ const allData = {
             title: "Space Tourism",
             link: "https://crazywolv-space-tourism.herokuapp.com/",
             gitHub: "https://github.com/CrazyWolv/space-tourism",
-            imgUrl: "/space-tourism.png",
+            imgUrl: "/img/space-tourism.png",
             techs:[
                 {
                     title:"HTML5",
@@ -110,7 +110,7 @@ const allData = {
             title: "NFT-Card",
             link: "https://crazywolv.github.io/nft-card/",
             gitHub: "https://github.com/CrazyWolv/nft-card",
-            imgUrl: "/nft-card.png",
+            imgUrl: "/img/nft-card.png",
             techs:[
                 {
                     title:"HTML5",
