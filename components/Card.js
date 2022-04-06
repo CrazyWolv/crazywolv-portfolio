@@ -6,17 +6,17 @@ export default function Card({imgUrl, title, link, gitHub, desc, techs, number})
     return (
         <>
             {/* 1 Card */}
-            <div className="card-container bg-transparent rounded-lg smMobile:w-[350px] smMobile:h-[245px] w-[370px] h-[250px] md:w-[560px] md:h-[350px] mx-auto perspective-1000"> {/* <-- Flipbox */}
-                    <div className={`preserve-3D card relative overflow-hidden rounded-md w-full h-full duration-1000 ${isFlipped ? "flip-card" : ""}`}> {/* <-- Flipbox-inner */}
+            <div className="card-container bg-transparent rounded-lg smMobile:w-[350px] smMobile:h-[245px] w-[370px] h-[250px] md:w-[540px] md:h-[340px] mx-auto perspective-1000"> {/* <-- Flipbox */}
+                    <div className={`preserve-3D border-2 border-[#4fb4f2] card relative overflow-hidden rounded-md w-full h-full dark:text-black duration-1000 ${isFlipped ? "flip-card" : ""}`}> {/* <-- Flipbox-inner */}
 
                            {/* Front of the Card */}
                    <div className={`front preserve-3D h-full w-full rounded-md bg-light ${isFlipped ? "rotate-y-180 z-0" : "rotate-y-default z-10" }`}> {/* <-- Flipbox-inner #Front */}
                    {/* Flip the card "Button" */}
-                        <div className="flip-arrow absolute font-bold text-2xl text-secondary cursor-pointer bottom-2 right-2 w-[40px] h-[40px] flex items-center justify-center z-10" onClick={() => (setIsFlipped(!isFlipped))}>↺</div>
+                        <div className="flip-arrow absolute font-bold text-2xl text-[#4fb4f2] cursor-pointer bottom-2 right-2 w-[40px] h-[40px] flex items-center justify-center z-10" onClick={() => (setIsFlipped(!isFlipped))}>↺</div>
                             <div className="absolute w-full flex justify-center text-center">
-                                    <p className="w-3/4 uppercase mt-5 font-bold text-xl rounded-md px-5 py-1 bg-secondary z-10">{title}</p>
+                                    <p className="w-3/4 uppercase mt-5 font-bold smMobile:text-lg text-xl rounded-md px-5 py-1 bg-[#4fb4f2] z-10">{title}</p>
                                 </div>
-                            <p className="absolute bottom-5 left-5 md:bottom-10 md:left-10 font-bold text-xl bg-secondary rounded-full w-[40px] h-[40px] flex items-center justify-center z-10">{number}</p>
+                            <p className="absolute bottom-5 left-5 md:bottom-10 md:left-10 font-bold text-xl bg-[#4fb4f2] rounded-full w-[40px] h-[40px] flex items-center justify-center z-10">{number}</p>
                             <img src={imgUrl} alt={`Image de présentation pour ${title}`} className="w-full h-full block rounded-md" />
                         </div>
                         
@@ -24,10 +24,10 @@ export default function Card({imgUrl, title, link, gitHub, desc, techs, number})
                         {/* Back of the Card */}
                     <div className={`absolute bg-light preserve-3D h-full w-full rounded-md flex flex-col justify-start ${isFlipped ? "y-rotate-180 back z-10" : "y-rotate-180 z-0" }`}> {/* <-- Flipbox-inner #Back */}
                     {/* Flip the card "Button" */}
-                    <div className="flip-arrow absolute font-bold text-2xl text-secondary cursor-pointer bottom-2 right-2 w-[40px] h-[40px] flex items-center justify-center z-10" onClick={() => (setIsFlipped(!isFlipped))}>↺</div>
+                    <div className="flip-arrow absolute font-bold text-2xl text-[#4fb4f2] cursor-pointer bottom-2 right-2 w-[40px] h-[40px] flex items-center justify-center z-10" onClick={() => (setIsFlipped(!isFlipped))}>↺</div>
                             {/* Title Div */}
                         <div className="absolute w-full flex justify-center text-center">
-                                    <p className="w-full uppercase md:mt-5 font-bold text-xl rounded-md px-5 py-1">
+                                    <p className="w-full uppercase md:mt-5 font-bold smMobile:text-lg text-xl rounded-md px-5 py-1">
                                         {title}
                                     </p>
                                 </div>
@@ -55,7 +55,7 @@ export default function Card({imgUrl, title, link, gitHub, desc, techs, number})
 
                                     { link === "WIP" || link === "" ? <p className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-dark font-bold">
                                         Work in Progress
-                                    </p> : <a href={link} target="_blank" className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-secondary font-bold">
+                                    </p> : <a href={link} target="_blank" className="absolute py-2 px-3 md:py-3 md:px-5 bottom-3 md:bottom-5 rounded-md bg-[#4fb4f2] font-bold">
                                         Découvrez-moi !
                                     </a>
                                     } 

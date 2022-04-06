@@ -82,7 +82,7 @@ const allData = {
                     icon:'/icons/redux.svg'
                 }
             ],
-            desc:"Projet personnel d'un voyage dans une forêt à la manière d'un 'Choose your Path' et différentes fins possibles. Work in Progress.",
+            desc:"Projet personnel d'un voyage dans une forêt à la manière d'un 'Choose your Path' et différentes fins possibles.",
           },
         {
             title: "Space Tourism",
@@ -126,9 +126,39 @@ const allData = {
     about:{
         title:"un Développeur Frontend un peu Crazy",
         description:[
-            `J'ai commencé à coder en HTML & CSS sur des templates de forums RPG lorsque j'avais entre 12 et 14 ans. J'ignorais encore à quel point le monde du dev' était vaste et passionnant.`,
-            `Lors de mes deux formations en Dev, j'ai appris l'existence de Bootstrap et Semantic-UI et j'ai entendu "Hello Darkness my Old Friend" en repensant à tout ce temps perdu sur le très peu de projets que j'avais à mon actif à ce moment-là.`,
+            `Ma description #1`,
+            `Ma description #2`,
             `Aujourd'hui, je suis un Dev qui aime Frontdev en React, NextJS, HTML5, JavaScript, CSS3, avec TailwindCSS ou Semantic-UI à l'aide de Yarn ou npm.`,
+        ],
+        funFacts:[
+            `J'ai commencé à coder en HTML & CSS sur des templates de forums RPG lorsque j'avais entre 12 et 14 ans. J'ignorais encore à quel point le monde du dev' était vaste et passionnant.`,
+            `Lorsque j'ai appris l'existence de Bootstrap et Semantic-UI, j'ai réellement entendu "Hello Darkness my Old Friend" (et pourtant j'aime bien le CSS).`,
+        ],
+        softSkills:[
+            {
+                name:"Curieux",
+                color:"#95c9b1",
+            },
+            {
+                name:"Ayant l'esprit d'équipe",
+                color:"#72BDA3",
+            },
+            {
+                name:"Empathique",
+                color:"#FFA69E",
+            },
+            {
+                name:"Attentif",
+                color:"#2C5784",
+            },
+            {
+                name:"À l'écoute",
+                color:"#62929E",
+            },
+            {
+                name:"Patient",
+                color:"#639A88",
+            },
         ],
         hardSkills:[
             {
@@ -227,13 +257,13 @@ const allData = {
         },
     ],
     resumeUrl:{
-        webDev:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
-        alt:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
-        planning:"https://drive.google.com/file/d/1b1c5PBN0SSMYTNM_QDi_T8tjoxO0dxVF/view?usp=sharing",
+        webDev:"https://drive.google.com/file/d/1g9JTg1OSPAr4RmihjpqVq7cpHMB6jmVK/view?usp=sharing",
+        alt:"https://drive.google.com/file/d/1zW1Y6H2Yp3WTEJSGDCzaOVG0EDeC-Zle/view?usp=sharing",
+        planning:"https://drive.google.com/file/d/14ttI1wE3Fm5LCIZvwovPRJdC5-fnlJ3i/view?usp=sharing",
     },
     socialLinks: {
-    linkedin: "https://linkedin.com/in/poulhes-enzo",
-    github: "https://github.com/crazywolv",
+    linkedin: "https://linkedin.com/in/enzo-poulhes",
+    github: "https://github.com/CrazyWolv",
     twitter:"https://twitter.com/CrazyVVolv",
     },
 }

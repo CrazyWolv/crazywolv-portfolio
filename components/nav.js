@@ -13,11 +13,12 @@ export default function Navigation() {
         setMounted(true);
     }, [])
 
+
     return (
-        <div className="w-full py-2 border-b-2 border-secondary md:py-5 dark:bg-dark">
+        <div className={`w-full py-2 bg-white md:py-5 dark:bg-dark`}>
 
             {/* Navbar */}
-            <nav className="max-w-6xl mx-auto flex md:flex-row justify-between items-center">
+            <nav className="max-w-6xl mx-auto flex tablet:flex-row md:flex-row lg:flex-row justify-between items-center">
                 <div className="flex items-center">
                     <Link href="/">
                         <a>
@@ -39,7 +40,7 @@ export default function Navigation() {
                     </div>
                 </div>
 
-                <div className="space-x-8 hidden text-center items-center md:flex">
+                <div className="space-x-8 hidden text-center items-center tablet:hidden md:flex md:space-x-8 lg:flex">
                     <Link href="/">   
                         <a className={router.pathname === "/" ? "text-lightThemeText dark:text-darkThemeText active dark:active" : "text-lightThemeText dark:text-darkThemeText"}>Home</a>
                     </Link>
@@ -55,7 +56,7 @@ export default function Navigation() {
                         <a className={router.pathname === "/projects" ? "text-lightThemeText dark:text-darkThemeText active dark:active" : "text-lightThemeText dark:text-darkThemeText"}>Projets</a>
                     </Link>
                 </div>
-                <div className="space-x-4 flex flex-row hidden items-center md:block md:flex">
+                <div className="space-x-4 flex flex-row hidden items-center tablet:block tablet:flex md:block md:flex lg:block lg:flex">
                 <a
                     href={allData.socialLinks.linkedin}
                     className="text-base font-normal text-lightThemeText dark:text-darkThemeText"
@@ -129,7 +130,7 @@ export default function Navigation() {
                 </button>
             </nav>
 
-            <div className="space-x-8 block text-center pb-5 md:hidden mt-4">
+            <div className="space-x-8 block text-center pb-5 tablet:block md:hidden lg:hidden mt-4">
                 <Link href="/">
                 <a className={router.pathname === "/" ? "text-lightThemeText dark:text-darkThemeText active dark:active" : "text-lightThemeText dark:text-darkThemeText"}>
                     Home

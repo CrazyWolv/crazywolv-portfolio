@@ -1,8 +1,10 @@
 import allData from '@data/data';
 
+
 export default function Footer() {
+
     return (
-        <footer className="footer py-8 border-t-2 border-secondary w-full dark:bg-dark">
+        <footer className="footer py-8 bg-white w-full dark:bg-dark">
             <div className="max-w-6xl mx-auto flex md:flex-row justify-around items-center">
             <div className="space-x-8 text-center md:flex">
                 {/* Title */}
@@ -24,7 +26,7 @@ export default function Footer() {
                     className="text-base font-normal text-lightThemeText dark:text-darkThemeText"
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" 
-                    fill="currentColor"
+                    fill={"currentColor"}
                     className="bi bi-github h-7 w-7 md:h-9 md:w-9" 
                     viewBox="0 0 512 512" 
                     strokeLinecap="round"
