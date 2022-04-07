@@ -1,5 +1,5 @@
-import Card from './Card';
-import allData from '../data/data';
+import Card from '@components/Card';
+import allData from '@data/data';
 
 export default function Projects() {
     let projectCount = 0;

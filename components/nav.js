@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import allData from '../data/data'
+import allData from '@data/data'
 
 export default function Navigation() {
     const router = useRouter();
