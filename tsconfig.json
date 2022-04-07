@@ -16,10 +16,10 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["/components/*"],
-      "@data/*": ["/data/*"],
-      "@styles/*": ["/styles/*"],
-      "@hooks/*": ["/hooks/*"],
+      "@components/*": ["./components/*"],
+      "@data/*": ["./data/*"],
+      "@styles/*": ["./styles/*"],
+      "@hooks/*": ["./hooks/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.js", "**/*.ts", "**/*.tsx"],
