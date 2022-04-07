@@ -17,9 +17,38 @@ const customClass = plugin(function({addUtilities}){
 
     // ACTIVE LINKS
     ".active":{
+      padding:".3rem",
+      borderRadius:"5px",
+      background:"#68A378",
+      fontSize:"1rem",
       fontWeight:"bold",
-      color:"#68A378",
-      textTransform:"uppercase",
+      color:"#fff",
+      transform:"scale(1.15)",
+    },
+    ".navLink":{
+      padding:".3rem",
+      borderRadius:"5px",
+      transform:"scale(1)",
+      transition:"transform .5s"
+    },
+    ".navLinkHover":{
+      padding:".3rem",
+      borderRadius:"5px",
+      background:"#68A378",
+      transform:"scale(1.25)",
+      transition:"background .2s, transform .5s"
+    },
+
+
+    // ICONS
+    ".icon":{
+      transform:"scale(1)",
+      transition:"color .5s, transform .3s",
+    },
+    ".iconHover":{
+      color:"#68A378!important",
+      transform:"scale(1.25) translateY(-.5em)",
+      transition:"color .5s, transform .3s",
     },
 
 
@@ -30,10 +59,10 @@ const customClass = plugin(function({addUtilities}){
       padding:".2rem",
       borderRadius:"5px",
       letterSpacing:"0",
-      transition:"letter-spacing 1s",
+      transition:"letter-spacing .5s",
     }, ".aboutTitleHover":{
       letterSpacing:"0.3rem",
-      transition:"letter-spacing 0.5s",
+      transition:"letter-spacing .3s",
     },
 
 
@@ -43,19 +72,19 @@ const customClass = plugin(function({addUtilities}){
       padding:"0 .3rem",
       borderRadius:"5px",
       background:"transparent",
-      transition:"color, background .5s",
+      transition:"color .3s, background .2s",
     }, ".aboutLinkHover":{
       color:"white",
       background:"#f44a3a",
       borderRadius:"5px",
-      transition:"color, background .5s",
+      transition:"color .3s, background .2s",
     },
     // SOCIAL LINKS IN ABOUT SECTION
     ".linkSocial":{
       color:"#f44a3a",
       padding:"0 .3rem",
       letterSpacing:"0.3rem",
-      transition:"color .5s",
+      transition:"color .2s",
     }, ".linkSocialHover":{
       color:"white",
       transition:"color .2s",
@@ -72,10 +101,24 @@ const customClass = plugin(function({addUtilities}){
     // SPANS IN MAIN SECTION
     ".softSkillSpan":{
       transform: "rotate(0deg)",
-      transition: "transform .3s ease-in-out",
+      transition: "box-shadow .3s, transform .3s ease-in-out",
     },".softSkillSpanHover":{
-      transform: "rotate(-5deg)",
+      boxShadow: "0 3.2rem 12px -25px #2b2b2b",
+      transform: "rotate(-5deg) translateY(-1em)",
+      transition: "box-shadow .3s, transform .3s ease-in-out",
+    },
+
+    // FULLNAME IN FOOTER
+    ".fullName":{
+      padding:".1rem .3rem .1rem .3rem",
+      transform: "rotate(0deg) scale(1)",
       transition: "transform .3s ease-in-out",
+    },".fullNameHover":{
+      background:"#68A378",
+      padding:".1rem .3rem .1rem .3rem",
+      borderRadius:"5px",
+      transform: "rotate(-5deg) scale(1.15) translateX(-1em)",
+      transition: "background .3s ease-in-out, transform .3s ease-in-out",
     },
 
     // LINING ANIMATION IN MAIN SECTION
@@ -131,7 +174,7 @@ module.exports = {
       'light':'#d6d6d6',
       'transparent':'transparent',
       'customYellow':'#F59E0B',
-      'darkThemeText':'#95A2B2',
+      'darkThemeText':'#fff',
       'lightThemeText':'#1E2836',
       'grey':'#8B949E',
       'black':'#000',

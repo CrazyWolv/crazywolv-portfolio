@@ -126,13 +126,14 @@ const allData = {
     about:{
         title:"un Développeur Frontend un peu Crazy",
         description:[
-            `Ma description #1`,
-            `Ma description #2`,
-            `Aujourd'hui, je suis un Dev qui aime Frontdev en React, NextJS, HTML5, JavaScript, CSS3, avec TailwindCSS ou Semantic-UI à l'aide de Yarn ou npm.`,
+            `J'ai commencé à coder en HTML & CSS sur des templates de forums RPG lorsque j'avais entre 12 et 14 ans. J'ignorais encore à quel point le monde du dev' était vaste et passionnant.`,
+            `J'étais un peu perdu jusqu'à ce qu'on me propose une Remise à Niveau dans les Métiers du Numérique chez Alaji SAS. J'y ai découvert le monde du Développement Web et ai rejoint l'école O'Clock par la suite ! J'y ai suivi une formation de Développement Web & Web Mobile fullstack JS avec une spécialisation React.`,
+            `Aujourd'hui, je suis un Dev qui aime Frontdev en React, Redux, HTML5, CSS3, JavaScript, avec TailwindCSS ou Semantic-UI à l'aide de Yarn ou npm.`,
         ],
         funFacts:[
-            `J'ai commencé à coder en HTML & CSS sur des templates de forums RPG lorsque j'avais entre 12 et 14 ans. J'ignorais encore à quel point le monde du dev' était vaste et passionnant.`,
-            `Lorsque j'ai appris l'existence de Bootstrap et Semantic-UI, j'ai réellement entendu "Hello Darkness my Old Friend" (et pourtant j'aime bien le CSS).`,
+            `J'adore l'automne et le son de la pluie a un effet apaisant sur moi.`,
+            `J'ai 2 chats très bavards.`,
+            `Lorsque j'ai appris l'existence de Bootstrap et Semantic-UI, j'ai entendu ce petit air : "Hello Darkness my Old Friend" (et pourtant j'aime bien le CSS).`,
         ],
         softSkills:[
             {
@@ -211,7 +212,7 @@ const allData = {
             company: "O'Clock",
             year: "2022-2023",
             companyLink: "https://oclock.io/",
-            desc: "Je suis en recherche d'une alternance...",
+            desc: "Je suis en recherche d'un contrat d'apprentissage de 16 mois pour mon Bachelor Concepteur et Développeur d'Applications ! Elle a débuté le 14 mars et se poursuivra jusqu'au 13 Juin 2022... jusqu'au 30 Juin 2023 si je trouve une entreprise ! Le rythme est de 2j/formation et 3j entreprise; sauf les 3 derniers mois qui se dérouleront entièrement en entreprise (une aide de l'état d'un montant de 8000€ sera accordée jusqu'en Juin 2022).",
         },
         {
             title: "Dev' Frontend",
@@ -257,8 +258,8 @@ const allData = {
         },
     ],
     resumeUrl:{
-        webDev:"https://drive.google.com/file/d/1g9JTg1OSPAr4RmihjpqVq7cpHMB6jmVK/view?usp=sharing",
-        alt:"https://drive.google.com/file/d/1zW1Y6H2Yp3WTEJSGDCzaOVG0EDeC-Zle/view?usp=sharing",
+        webDev:"https://drive.google.com/file/d/1Vb4_49VlFob_xv9XwTMf9fcIZMAQ09fu/view?usp=sharing",
+        alt:"https://drive.google.com/file/d/1TAT6JlybaRZaZ0X9iZvbOAGIanPLBcO9/view?usp=sharing",
         planning:"https://drive.google.com/file/d/14ttI1wE3Fm5LCIZvwovPRJdC5-fnlJ3i/view?usp=sharing",
     },
     socialLinks: {
