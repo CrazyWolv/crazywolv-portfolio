@@ -22,6 +22,6 @@
       "@hooks/*": ["hooks/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.js", "**/*.ts", "**/*.tsx", "pages/_app.tsx", "pages/_error.js", "pages/404.js", "pages/projects.tsx", "pages/index.tsx", "pages/experiences.tsx", "pages/contact.tsx", "pages/about.tsx", "components/About.js", "components/Card.js", "components/Contact.js", "components/Error404.js", "components/Exp.js", "components/FabulousHero.js", "components/Footer.js", "components/Layout.js", "components/Footer.js", "components/MyFavProjects.js", "components/Projects.js"],
+  "include": ["next-env.d.ts", "**/*.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
