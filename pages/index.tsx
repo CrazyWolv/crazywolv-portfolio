@@ -1,5 +1,5 @@
-import Layout from '@components/Layout'
-import FabulousHero from '@components/FabulousHero'
+import Layout from '@components/Layout.js'
+import FabulousHero from '@components/FabulousHero.js'
 
 
 export default function Home() {

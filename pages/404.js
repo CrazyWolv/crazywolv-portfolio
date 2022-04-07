@@ -1,5 +1,4 @@
-import Layout from '../components/Layout'
-import Error404 from '../components/Error404'
+import Error404 from '@components/Error404.js'
 
 export default function Custom404(){
     return(
