@@ -1,4 +1,4 @@
-import Card from '@components/Card';
+import Card from './Card';
 import allData from '@data/data';
 
 export default function Projects() {
