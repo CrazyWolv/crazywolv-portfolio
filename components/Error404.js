@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Footer from './Footer';
+import Footer from "./Footer";
 
 export default function Error404() {
     const meta = {
@@ -25,11 +25,11 @@ export default function Error404() {
                         <p className="w-full md:w-3/4 px-3 py-2 text-xl leading-loose">Il semblerait que vous ayez perdu votre chemin ! Lorsque vous aurez fini d'observer cet adorable boule de poils, vous pourrez cliquer <a href="/" target="_blank" className="errorLink hover:errorLinkHover">ici</a> ou même encore <a href="/" target="_blank" className="errorLink hover:errorLinkHover">là</a> pour <span className="font-bold">revenir à l'accueil</span>.</p>
                     </div>
                     <div className="w-full lg:w-1/2 lg:mr-5">
-                        <img src="/img/error404.png" className="block" />
+                        <img src="/img/error404.png" className="block" alt="Error 404 page not found" />
                     </div>
                 </div>
                 <div className="w-full py-5 text-sm text-center">
-                    <a className="text-sm" target="_blank" rel="noreferer" href="https://fr.freepik.com/vecteurs/animal">Animal vecteur créé par storyset - fr.freepik.com</a>
+                    <a className="text-sm" target="_blank" rel="noreferrer" href="https://fr.freepik.com/vecteurs/animal">Animal vecteur créé par storyset - fr.freepik.com</a>
                 </div>
             </section>
 
