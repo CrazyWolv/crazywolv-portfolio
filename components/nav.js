@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import allData from '@data/data'
+import allData from '../data/data'
 
 export default function Navigation() {
     const router = useRouter();
@@ -99,7 +99,7 @@ export default function Navigation() {
                 <button
                     aria-label="Toggle Dark Mode"
                     type="button"
-                    className="w-10 h-10 p-3 mr-5 md:mr-0 rounded focus:outline-none"
+                    className="w-10 h-10 p-3 mr-5 rounded focus:outline-none"
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
                                         {mounted && (
@@ -130,7 +130,7 @@ export default function Navigation() {
                 </button>
             </nav>
 
-            <div className="space-x-8 block text-center pb-5 tablet:block md:block lg:hidden mt-4">
+            <div className="space-x-8 block text-center pb-5 tablet:block md:hidden lg:hidden mt-4">
                 <Link href="/">
                 <a className={router.pathname === "/" ? "text-lightThemeText dark:text-darkThemeText active dark:active" : "text-lightThemeText dark:text-darkThemeText"}>
                     Home

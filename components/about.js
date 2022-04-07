@@ -1,4 +1,4 @@
-import allData from '@data/data';
+import allData from '../data/data';
 
 export default function About() {
     let factKey=0;

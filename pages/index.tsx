@@ -1,8 +1,6 @@
-import Head from "next/head";
-import Layout from '@components/Layout'
-import FabulousHero from '@components/FabulousHero'
-import FavProjects from '@components/MyFavProjects'
-import allData from '@data/data'
+import Layout from '../components/Layout'
+import FabulousHero from '../components/FabulousHero'
+
 
 export default function Home() {
   return (
@@ -12,7 +10,6 @@ export default function Home() {
         description="Voilà 2 ans que ma quête chez O'Clock s'est terminée. Venez découvrir mes projets !"
       >
         <FabulousHero />
-        {/* <FavProjects /> */}
         </Layout>
     </>
   )

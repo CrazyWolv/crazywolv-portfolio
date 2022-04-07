@@ -1,4 +1,4 @@
-import allData from '@data/data';
+import allData from '../data/data';
 
 
 export default function FabulousHero() {
@@ -9,9 +9,9 @@ export default function FabulousHero() {
             {/* Title */}
                 <div className="w-50 bg-white dark:bg-dark flex flex-col gap-y-3 md:gap-y-5 md:ml-10 lg:ml-0">
                     <h1 className="text-5xl tablet:text-5xl md:text-5xl lg:text-7xl font-bold text-lightThemeText dark:text-darkThemeText">Je suis un Dev...</h1>
-                    <h2 className="text-3xl tablet:text-3xl md:text-3xl lg:text-5xl md:underlined underlined-red underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Frontend React</h2>
-                    <h2 className="text-3xl tablet:text-3xl md:text-3xl lg:text-5xl md:underlined underlined-yellow underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Artiste numérique</h2>
-                    <h2 className="text-3xl tablet:text-3xl md:text-3xl lg:text-5xl md:underlined underlined-green underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Super curieux</h2>
+                    <h2 className="text-3xl tablet:text-3xl md:text-3xl lg:text-5xl underlined underlined-red underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Frontend React</h2>
+                    <h2 className="text-3xl tablet:text-3xl md:text-3xl lg:text-5xl underlined underlined-yellow underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Artiste numérique</h2>
+                    <h2 className="text-3xl tablet:text-3xl md:text-3xl lg:text-5xl underlined underlined-green underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Super curieux</h2>
                     <h2 className="flex gap-x-3 text-3xl tablet:text-3xl md:text-3xl lg:text-5xl md:underlined underlined-blue underlined-bold hover:underlined-hover font-bold text-lightThemeText dark:text-darkThemeText">▸ Qui <p className="hover:animate-heartBeat">❤️</p> Apprendre</h2>
                 </div>
         

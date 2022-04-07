@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 
 export default function Card({imgUrl, title, link, gitHub, desc, techs, number}) {
     const [isFlipped, setIsFlipped] = useState(false);

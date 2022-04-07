@@ -65,6 +65,20 @@ const customClass = plugin(function({addUtilities}){
       transition:"letter-spacing .3s",
     },
 
+    // 404 LINKS
+    ".errorLink":{
+      color:"white",
+      fontSize:"1.2rem",
+      padding:".5rem .8rem .5rem .8rem",
+      borderRadius:"5rem",
+      background:"#68A378",
+      transition:"color .3s, background .3s",
+    }, ".errorLinkHover":{
+      color:"#68A378",
+      background:"white",
+      transition:"color .3s, background .3s",
+    },
+
 
     // LINKS IN ABOUT SECTION
     ".aboutLink":{
@@ -79,6 +93,7 @@ const customClass = plugin(function({addUtilities}){
       borderRadius:"5px",
       transition:"color .3s, background .2s",
     },
+
     // SOCIAL LINKS IN ABOUT SECTION
     ".linkSocial":{
       color:"#f44a3a",
