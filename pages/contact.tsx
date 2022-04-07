@@ -1,5 +1,5 @@
-import Contact from '@components/Contact.js'
-import Layout from '@components/Layout.js'
+import Contact from '@components/contact'
+import Layout from '@components/layout'
 
 export default function ContactMe() {
   return (

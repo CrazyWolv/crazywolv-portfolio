@@ -1,5 +1,5 @@
-import Projects from '@components/Projects'
-import Layout from '@components/Layout'
+import Projects from '@components/projects'
+import Layout from '@components/layout'
 
 export default function MyProjects() {
   return (

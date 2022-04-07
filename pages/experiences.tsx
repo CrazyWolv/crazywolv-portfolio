@@ -1,5 +1,5 @@
 import Exp from '@components/Exp'
-import Layout from '@components/Layout'
+import Layout from '@components/layout'
 
 export default function MyPassedExp() {
   return (

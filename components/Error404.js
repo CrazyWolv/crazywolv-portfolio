@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Footer from "./Footer";
+import Footer from "./footer";
 
 export default function Error404() {
     const meta = {
