@@ -1,5 +1,5 @@
-import Exp from '@components/Exp.js'
-import Layout from '@components/Layout.js'
+import Exp from '@components/Exp'
+import Layout from '@components/Layout'
 
 export default function MyPassedExp() {
   return (
