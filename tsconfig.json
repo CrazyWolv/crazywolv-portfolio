@@ -22,6 +22,6 @@
       "@hooks/*": ["hooks/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/projects.js", "pages/index.js", "pages/experiences.js", "pages/contact.js", "pages/about.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.tsx", "pages/_error.js", "pages/404.js", "pages/projects.tsx", "pages/index.tsx", "pages/experiences.tsx", "pages/contact.tsx", "pages/about.tsx"],
   "exclude": ["node_modules"]
 }
