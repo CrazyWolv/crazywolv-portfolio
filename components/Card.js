@@ -12,7 +12,7 @@ export default function Card({imgUrl, title, link, gitHub, desc, techs, number})
                            {/* Front of the Card */}
                    <div className={`front preserve-3D h-full w-full rounded-md bg-light ${isFlipped ? "rotate-y-180 z-0" : "rotate-y-default z-10" }`}> {/* <-- Flipbox-inner #Front */}
                    {/* Flip the card "Button" */}
-                        <div className="flip-arrow absolute font-bold text-[#4fb4f2] cursor-pointer bottom-2 right-2 w-[100px] h-[40px] flex items-center justify-center z-10 gap-x-2" onClick={() => (setIsFlipped(!isFlipped))}><p className="text-base">Flip me !</p><p className="text-2xl">↺</p></div>
+                        <div className="flip-arrow absolute font-bold text-[#4fb4f2] cursor-pointer bottom-2 right-2 w-[80px] tablet:w-[100px] h-[40px] flex items-center justify-center z-10 gap-x-2" onClick={() => (setIsFlipped(!isFlipped))}><p className="text-sm tablet:text-base">Flip me</p><p className="text-xl tablet:text-2xl">↺</p></div>
                             <div className="absolute w-full flex justify-center text-center">
                                     <p className="w-3/4 uppercase mt-5 font-bold smMobile:text-lg text-xl rounded-md px-5 py-1 bg-[#4fb4f2] z-10">{title}</p>
                                 </div>
@@ -24,7 +24,7 @@ export default function Card({imgUrl, title, link, gitHub, desc, techs, number})
                         {/* Back of the Card */}
                     <div className={`absolute bg-light preserve-3D h-full w-full rounded-md flex flex-col justify-start ${isFlipped ? "y-rotate-180 back z-10" : "y-rotate-180 z-0" }`}> {/* <-- Flipbox-inner #Back */}
                     {/* Flip the card "Button" */}
-                    <div className="flip-arrow absolute font-bold text-[#4fb4f2] cursor-pointer bottom-2 right-2 w-[100px] h-[40px] flex items-center justify-center z-10 gap-x-2" onClick={() => (setIsFlipped(!isFlipped))}><p className="text-base">Again !</p><p className="text-2xl">↺</p></div>
+                    <div className="flip-arrow absolute font-bold text-[#4fb4f2] cursor-pointer bottom-2 right-2 w-[80px] tablet:w-[100px] h-[40px] flex items-center justify-center z-10 gap-x-2" onClick={() => (setIsFlipped(!isFlipped))}><p className="text-sm tablet:text-base">Again !</p><p className="text-xl tablet:text-2xl">↺</p></div>
                             {/* Title Div */}
                         <div className="absolute w-full flex justify-center text-center">
                                     <p className="w-full uppercase md:mt-5 font-bold smMobile:text-lg text-xl rounded-md px-5 py-1">

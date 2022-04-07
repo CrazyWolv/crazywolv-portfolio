@@ -15,7 +15,7 @@ export default function About() {
                 <div className="py-15 px-5 tablet:px-10 md:px-10 font-bold flex items-center justify-center">
                     <div className="text-3xl tablet:text-5xl md:text-5xl text-center text-lightThemeText dark:text-darkThemeText">Je code actuellement le projet <div className="mt-7 tablet:mt-5 md:mt-5"><span className="text-base tablet:text-2xl md:text-2xl">✨</span> <a className="accentOn" href={allData.about.currentProjectUrl} target="_blank" rel="noreferrer">{allData.about.currentProject}</a> <span className="text-base tablet:text-2xl md:text-2xl">✨</span></div></div>
                 </div>
-                        <div className="w-3/6 md:w-full lg:w-full mx-auto flex flex-col items-center py-10 gap-y-7 bg-[#f44a3a]">
+                        <div className="w-full lg:w-full mx-auto flex flex-col items-center py-10 gap-y-7 bg-[#f44a3a]">
                             {allData.about.description.map((desc) => {
                                 descKey++;
                                 return(
@@ -27,7 +27,7 @@ export default function About() {
                     <div className="w-full px-2 py-2">
                         <div className="w-full py-5">
                             <p className="min-w-[7rem] max-w-[9rem] ml-7 mt-5 mb-3 py-3 text-2xl bg-[#f44a3a] rounded-md text-center text-white font-bold">Fun Facts</p>
-                            <div className="w-3/6 md:w-full lg:w-full mx-auto flex flex-col gap-y-3">
+                            <div className="w-full mx-auto flex flex-col gap-y-3">
                             {allData.about.funFacts.map((fact) => {
                                 factKey++;
                                 return(
