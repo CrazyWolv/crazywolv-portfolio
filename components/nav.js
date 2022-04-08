@@ -60,6 +60,7 @@ export default function Navigation() {
                 <a
                     href={allData.socialLinks.linkedin}
                     className="text-base font-normal icon hover:iconHover text-lightThemeText dark:text-darkThemeText"
+                    target="_blank" rel="noreferrer"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     fill="currentColor"
@@ -74,6 +75,7 @@ export default function Navigation() {
                 <a
                     href={allData.socialLinks.twitter}
                     className="text-base font-normal icon hover:iconHover text-lightThemeText dark:text-darkThemeText"
+                    target="_blank" rel="noreferrer"
                 ><svg xmlns="http://www.w3.org/2000/svg" 
                 fill="currentColor"
                 className="bi bi-twitter h-8 w-8" 
