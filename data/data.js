@@ -59,31 +59,31 @@ const allData = {
             ],
             desc:"Un rempompage absolument HONTEUX de Stack Overflow pour me (re)faire la main sur Node.JS et découvrir MongoDB. CRUD user, topics et messages.",
           },
-          {
-            title: "Forest Project",
-            link: "WIP",
-            gitHub:"https://github.com/CrazyWolv/Forest-Project",
-            imgUrl: "/img/forest-project.png",
-            techs:[
-                {
-                    title:"HTML5",
-                    icon:'/icons/html-1.svg'
-                },{
-                    title:"CSS3",
-                    icon:'/icons/css-3.svg'
-                },{
-                    title:"SaSS",
-                    icon:'/icons/sass-1.svg'
-                },{
-                    title:"React",
-                    icon:'/icons/react-2.svg'
-                },{
-                    title:"Redux",
-                    icon:'/icons/redux.svg'
-                }
-            ],
-            desc:"Projet personnel d'un voyage dans une forêt à la manière d'un 'Choose your Path' et différentes fins possibles.",
-          },
+        //   {
+        //     title: "Forest Project",
+        //     link: "WIP",
+        //     gitHub:"https://github.com/CrazyWolv/Forest-Project",
+        //     imgUrl: "/img/forest-project.png",
+        //     techs:[
+        //         {
+        //             title:"HTML5",
+        //             icon:'/icons/html-1.svg'
+        //         },{
+        //             title:"CSS3",
+        //             icon:'/icons/css-3.svg'
+        //         },{
+        //             title:"SaSS",
+        //             icon:'/icons/sass-1.svg'
+        //         },{
+        //             title:"React",
+        //             icon:'/icons/react-2.svg'
+        //         },{
+        //             title:"Redux",
+        //             icon:'/icons/redux.svg'
+        //         }
+        //     ],
+        //     desc:"Projet personnel d'un voyage dans une forêt à la manière d'un 'Choose your Path' et différentes fins possibles.",
+        //   },
         {
             title: "Space Tourism",
             link: "https://crazywolv-space-tourism.herokuapp.com/",

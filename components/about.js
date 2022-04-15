@@ -39,7 +39,7 @@ export default function About() {
                             <div className="flex flex-wrap w-[95%] mx-auto py-10 gap-x-10 gap-y-5 md:gap-5">
                             {allData.about.hardSkills.map((skill) => {
                                 return(
-                                    <img key={skill.name} src={skill.icon} alt={`Logo ${skill.name}`} className="h-15 w-15 tablet:h-20 tablet:w-20 md:h-20 md:w-20 hover:animate-wiggle" />
+                                    <img key={skill.name} src={skill.icon} alt={`Logo ${skill.name}`} title={skill.name} className="h-15 w-15 tablet:h-20 tablet:w-20 md:h-20 md:w-20 hover:animate-wiggle" />
                                 )
                             })}
                             </div>
