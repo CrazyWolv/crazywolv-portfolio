@@ -7,7 +7,7 @@ const allData = {
     town:"Strasbourg, Grand-Est, France",
     projects:[
         {
-            title: "Application BeSwarm",
+            title: "Foodish",
             link: "WIP",
             gitHub:"",
             imgUrl: "/img/appBeSwarm.png",
@@ -219,7 +219,7 @@ const allData = {
             company: "O'Clock",
             year: "2021",
             companyLink: "https://oclock.io/",
-            desc: "Projet de fin de formation. J'y ai contribué du Cahier des Charges jusqu'au déploiement test au sein d'une équipe de 4 devs. Cette application Web - nommée Tut'Orico - était une application de tutoriels << Do It Yourself >> où l'on pouvait s'inscrire pour créer des tutos à l'aide d'un formulaire qui récupérait une liste d'outils depuis la base de données de l'application. Seuls les utilisateurs pouvaient créer un tutoriel et ils n'étaient visibles qu'une fois validé par l'utilisateur Admisateur - afin d'éviter le spam et les tutoriels dangereux.",
+            desc: "Projet de fin de formation. J'y ai contribué du Cahier des Charges jusqu'au déploiement test au sein d'une équipe de 4 devs. Cette application Web - nommée Tut'Orico - était une application de tutoriels << Do It Yourself >> où l'on pouvait s'inscrire pour créer des tutos à l'aide d'un formulaire qui récupérait une liste d'outils depuis la base de données de l'application. Seuls les utilisateurs pouvaient créer un tutoriel et ils n'étaient visibles qu'une fois validé par l'utilisateur Administrateur - afin d'éviter le spam et les tutoriels dangereux.",
         },
         {
             title: "Jeune pousse en Dev'",
